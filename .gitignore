@@ -1,5 +1,6 @@
 *.html
 *.json
+*.css
 /node_modules
 /.vscode
 /myFirstProject
