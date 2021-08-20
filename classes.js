@@ -38,7 +38,7 @@ class RootElement {
 		this.$el.style.opacity = '1'
 		this.$el.style.transition = '0.8s'
 		this.$el.style.background = this.randomColor()
-		console.log(this.randomColor, this)
+
 	}
 
 	append() {
