@@ -55,9 +55,11 @@ let promise = new Promise(function (resolve, reject) {
 					}
 
 				]
-				reject('DataBase could not receive users list')
+
+				reject('DataBase could not receive users list') // Тест для проверки работы метода catch()
+
 				console.log('Preparing data for the client...', users)
-				resolve(users)
+				resolve(users) //передаем данные в качестве параметров resolve(), чтобы у следующего промиса был к ним доступ
 			}, 3000)
 		})
 	})
@@ -84,8 +86,8 @@ let promise = new Promise(function (resolve, reject) {
 	})
 	.catch(function (error) {
 		console.error(error)
-	})
+	})// Сработает, если вызван метод reject(). СОобщение, которое будет в него передано отобразится в методе Catch
 	.finally(function () {
-		console.log('Finally')
+		console.log('Finally') //будет выполнен в влюбом случае.
 
 	})
