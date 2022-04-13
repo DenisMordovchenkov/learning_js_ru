@@ -22,4 +22,4 @@ console.log(typeof isTrue)
 console.log(typeof obj)
 console.log(typeof nothing) //Ошибка! Указано, что это объект!
 console.log(typeof undef)
-console.log(typeof function () { }) // Сделано для удобства. По сути это объект, но в консоли будет выведено "function"
+console.log(typeof function () { }) // По сути это объект, но в консоли будет выведено "function"
